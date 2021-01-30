@@ -1,5 +1,14 @@
 def turn
+  puts "please enter 1-9:"
+  input = gets.trim
+  index = input - 1
 
+  if valid_move(board, index)
+    move(board, index)
+  else
+    puts "Invalid move, try again"
+    turn
+  end
 end
 
 def display_board(board)
