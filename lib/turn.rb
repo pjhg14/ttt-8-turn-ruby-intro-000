@@ -8,7 +8,7 @@ def turn(board)
     move(board, index)
   else
     puts "Invalid move, try again"
-    turn
+    turn(board)
   end
 end
 
