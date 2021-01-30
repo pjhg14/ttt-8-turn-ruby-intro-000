@@ -4,7 +4,7 @@ def turn(board)
 
   index = input.to_i - 1
 
-  if valid_move(board, index)
+  if valid_move?(board, index)
     move(board, index)
   else
     puts "Invalid move, try again"
